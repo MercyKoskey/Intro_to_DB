@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Orders (
 
 -- CREATE ORDER DETAILS TABLE
 CREATE TABLE IF NOT EXISTS Order_Details (
-    orderdetailid INT AUTO_INCREMENT PRIMARY KEY,Add commentMore actions
+    orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT NOT NULL,
     book_id INT NOT NULL,
     quantity DOUBLE NOT NULL,
