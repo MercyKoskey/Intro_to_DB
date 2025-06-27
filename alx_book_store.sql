@@ -1,6 +1,6 @@
 --create database
 CREATE DATABASE IF NOT EXISTS alx_book_store;
-USE alx_book_store
+USE alx_book_store;
 
 -- Create Books table
 CREATE TABLE IF NOT EXISTS Books (
@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS Orders_Details(
     order_id INT NOT NULL,
     book_id INT NOT NULL,
     quantity DOUBLE NOT NULL,
-    FOREIGN KEY (order_id) REFERENCES (Orders table),
-    FOREIGN KEY (book_id) REFERENCES (Books table),
+    FOREIGN KEY (order_id) REFERENCES Orders (order_id),
+    FOREIGN KEY (book_id) REFERENCES Books (book_id),
 );
 
 
